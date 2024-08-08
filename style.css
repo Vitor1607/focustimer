@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --bg--color: hsl(0, 0, 90, 100%);
+  --text--color: hsl(240, 6, 21, 100%);
+  --rain--color: hsl(0, 0, 100, 100%);
+  --bg--rain: hsl(194, 84%, 34%);
+  --bg--button: hsl(240, 11%, 93%);
+}
+
+body{
+  background-color: var(--bg--color);
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+#app {
+  display: flex;
+  align-content: space-around;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+
+span{
+  font-size: 12.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--text--color);
+  height: 11.7rem;
+}
+
+.timer {
+  display: grid;
+  gap: 4.8rem;
+}
+
+.control1 {
+  margin-top: 1.5rem;
+}
+
+span {
+  display: inline-block;
+}
+
+.timer button {
+  padding: 0;
+  font-size: 4.8rem;
+  color: var(--text--color);
+  background: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-top: -8rem;
+}
+
+#controls {
+  display: flex;
+  gap: 4rem;
+}
+
+.sounds button{
+  padding: 4.8rem;
+  align-items: center;
+  background: var(--bg--button);
+  border-radius: 3rem;
+  color: var(--text--color);
+}
+
+.sounds .soundRain{
+  background: var(--bg--rain);
+  color: var(--rain--color);
+}
+
+section {
+  margin-left: 19.2rem;
+  display: grid;
+  gap: 3.2rem;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  
+}
+
+.flex {
+  display: flex;
+  gap: 3.2rem;
+}
